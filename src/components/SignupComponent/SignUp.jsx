@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Styles from "./SignUp.module.css";
 
-import style from "./Signup.module.css";
+
 import { ImCross } from "react-icons/im";
 import { authAtom } from "../../recoil/users";
 import { useRecoilState } from "recoil";
