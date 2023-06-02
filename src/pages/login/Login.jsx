@@ -1,15 +1,13 @@
 import UiPart from "./../../components/smallComponents/UiPart";
 import { ImCross } from "react-icons/im";
-import NormalButton from "./../../components/smallComponents/NormalButton";
+
 import { NavLink, useNavigate } from "react-router-dom";
 
 import React, { useEffect, useState } from "react";
 import { Alert, Button, TextField } from "@mui/material";
 import Box from "@mui/material/Box";
 import style from "./Login.module.css";
-import { BsTwitter } from "react-icons/bs";
-import { FcGoogle } from "react-icons/fc";
-import { BsApple } from "react-icons/bs";
+
 import Icons from "./../../components/smallComponents/Icons";
 import IconButton from "@mui/material/IconButton";
 import FilledInput from "@mui/material/FilledInput";
@@ -18,7 +16,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import { Password } from "@mui/icons-material";
+
 
 import { Snackbar } from "@mui/base";
 import Navbar from "../navbar/Navbar";
@@ -120,10 +118,8 @@ const Login = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-
                 width: 400,
                 height: 400,
-
                 backgroundColor: "white",
                 borderRadius: "10px",
                 border: "2px solid lightgrey",
@@ -190,7 +186,6 @@ const Login = () => {
                   fontSize: 14,
                   letterSpacing: 0.25,
                   margin: 2,
-
                   "&:hover": {
                     backgroundColor: "initial",
                     color: "initial",
@@ -222,10 +217,8 @@ const Login = () => {
                 flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
-
                 width: 350,
                 height: 350,
-
                 backgroundColor: "white",
                 borderRadius: "10px",
                 border: "2px solid lightgrey",
@@ -240,9 +233,7 @@ const Login = () => {
               <button onClick={handleForm}>
                 <Icons icons={<ImCross className={style.cross} />} />
               </button>
-
               <UiPart title="Sign in to Twitter" />
-
               <TextField
                 id="filled-basic"
                 // label="Phone,email, or username"
@@ -250,7 +241,6 @@ const Login = () => {
                 variant="outlined"
                 sx={{ width: 300, marginBottom: 5 }}
               />
-
               <div>
                 <FormControl sx={{ m: 1, width: "38ch" }} variant="filled">
                   <InputLabel htmlFor="filled-adornment-password">

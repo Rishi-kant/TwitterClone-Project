@@ -27,7 +27,7 @@ import LandingPa from "./pages/LandingPa";
 // import Login from "./pages/login/login";
 import { useRecoilState } from "recoil";
 import { authAtom } from "./recoil/users";
-import Login from "./pages/login/Login";
+import Login from "./pages/login/Login" ;
 
 
 function App() {

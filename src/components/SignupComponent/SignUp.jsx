@@ -70,21 +70,17 @@ export default function SignUp() {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [isLoggedIn, setIsLoggedIn] = useRecoilState(authAtom);
-  // const [open, setOpen] = useState(false);
+
 
   function handlechange(e) {
     const { name, value } = e.target;
     setDetails({ ...details, [name]: value });
-    // console.log(details)
-    // console.log("my element ",e)
+   
   }
 
   function handleToggle() {
     setToggle(!toggle);
   }
-  // function handleClose() {
-  //   setOpen(false);
-  // }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -152,8 +148,7 @@ export default function SignUp() {
 
     return warnings;
   }
-  console.log(errors);
-  console.log(toggle);
+ 
   return (
     <div style={{ margin: "50px" }}>
       <Box
